@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="copy-backdrop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#051d38" stop-opacity=".96" />
+      <stop offset="56%" stop-color="#051d38" stop-opacity=".82" />
+      <stop offset="78%" stop-color="#051d38" stop-opacity=".12" />
+      <stop offset="100%" stop-color="#051d38" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <image href="ogp-background.png" x="0" y="0" width="1200" height="630" preserveAspectRatio="xMidYMid slice" />
+  <rect width="1200" height="630" fill="url(#copy-backdrop)" />
+  <image href="../public/logo-transparent-outline.png" x="70" y="68" width="96" height="96" />
+  <text x="70" y="214" fill="#a9eadc" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="18" font-weight="700" letter-spacing="3">CIVIC UNKNOT</text>
+  <text x="70" y="292" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="800" letter-spacing="-2">Civic<tspan fill="#2bb3a0">Unknot</tspan></text>
+  <text x="70" y="355" fill="#ffffff" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="34" font-weight="700">絡まりは、ほどける。</text>
+  <text x="70" y="405" fill="#ffffff" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="34" font-weight="700">気づきは、つながる。</text>
+  <line x1="70" y1="454" x2="158" y2="454" stroke="#2bb3a0" stroke-width="5" stroke-linecap="round" />
+  <text x="70" y="496" fill="#d9e8f2" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="20" font-weight="500">気づきを、信頼できる公的な相談窓口へ。</text>
+</svg>
