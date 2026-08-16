@@ -1,0 +1,61 @@
+# CivicUnknot
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
+**デモ:** https://yunbow.github.io/civic-unknot/
+
+複雑に絡まって見える制度や支援の情報を、東京都のオープンデータの力でほどき、一人ひとりの気づきを信頼できる公的な相談窓口へつなぐことを目指すチーム紹介サイトです。
+
+- 「Unknot」という名前とロゴにこめた考え方
+- 発達特性のセルフチェックと公的相談窓口の案内をつなぐ支援ナビ「trait-compass」の紹介
+- プライバシー・安全設計と、オープンデータ活用の考え方
+- 行政向けAIサービス設計フレームワーク「8つの問い」への向き合い
+
+trait-compass のセルフチェック結果はブラウザ内で完結し、外部には保存されません。医療行為ではなく、公的な相談窓口への相談を後押しするためのツールです。
+
+## 技術スタック
+
+TypeScript / React 19 / Vite 8 / CSS
+
+## 開発
+
+```bash
+cd app            # アプリケーションディレクトリへ移動
+npm ci            # 依存関係をインストール
+npm run dev       # 開発サーバーを起動
+npm run build     # 型チェックと GitHub Pages 用の公開ファイルを生成
+npm run preview   # ビルド結果をプレビュー
+```
+
+## デプロイ（GitHub Pages）
+
+`app/` で `npm run build` を実行すると、ルートの `index.html` と `assets/` に公開ファイルが生成されます。
+GitHub Pages の **Settings → Pages → Build and deployment → Source** で、`main` ブランチの `/ (root)` を選択してください。
+Vite の相対 `base: "./"` を使用しているため、プロジェクトサイトのサブパスでも動作します。
+
+## ディレクトリ構成
+
+```text
+app/
+├─ src/
+│  ├─ app/          アプリケーションの起点
+│  ├─ components/   再利用可能な画面部品
+│  └─ pages/        ページコンポーネント
+├─ public/          ロゴ、OGP、検索エンジン向けの静的ファイル
+├─ package.json
+└─ vite.config.ts
+assets/             Vite が生成する公開用 JS / CSS バンドル
+index.html          GitHub Pages 用エントリポイント
+```
+
+## サービスについて
+
+- trait-compass は、発達特性のセルフチェック結果を、東京都・区市町村のオープンデータによる公的相談窓口の案内へつなぐ支援ナビです。
+- AI 機能は完全オプトインで、送信前プレビューとログ非保存を前提としています。
+- 行政との接続、多言語対応やデジタルに不慣れな方への配慮、実運用における成果測定は、今後も公開しながら取り組む課題です。
+
+## 免責事項
+
+本サイトで紹介する trait-compass は医療行為ではありません。セルフチェックの結果は医学的な判定を示すものではなく、公的な相談窓口への相談を後押しするためのものです。
+
+---
