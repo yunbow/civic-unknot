@@ -1,0 +1,9 @@
+{
+  "ignorePatterns": [
+    { "pattern": "^http://localhost" },
+    { "pattern": "^http://127\\.0\\.0\\.1" },
+    { "pattern": "^https://github\\.com/yunbow/civic-unknot/issues" },
+    { "pattern": "^https://github\\.com/yunbow/civic-unknot/actions/workflows/lint\\.yml" }
+  ],
+  "aliveStatusCodes": [200, 206, 429]
+}

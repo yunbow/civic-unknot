@@ -1,5 +1,6 @@
 # CivicUnknot
 
+[![Lint & Link Check](https://github.com/yunbow/civic-unknot/actions/workflows/lint.yml/badge.svg)](https://github.com/yunbow/civic-unknot/actions/workflows/lint.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **デモ:** https://yunbow.github.io/civic-unknot/
