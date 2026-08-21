@@ -30,23 +30,32 @@ npm run preview   # ビルド結果をプレビュー
 
 ## デプロイ（GitHub Pages）
 
-`app/` で `npm run build` を実行すると、ルートの `index.html` と `assets/` に公開ファイルが生成されます。
-GitHub Pages の **Settings → Pages → Build and deployment → Source** で、`main` ブランチの `/ (root)` を選択してください。
+`main` ブランチへの push をトリガーに `.github/workflows/deploy.yml` が `app/` で `npm run build` を実行し、
+`app/dist` を GitHub Pages へ自動デプロイします。ビルド成果物はリポジトリにコミットしません。
+GitHub Pages の **Settings → Pages → Build and deployment → Source** は **GitHub Actions** を選択してください。
 Vite の相対 `base: "./"` を使用しているため、プロジェクトサイトのサブパスでも動作します。
+
+`npm run build` は型チェック・クライアントビルドに加え、`react-dom/server` によるサーバーサイドレンダリングを実行し、
+`app/dist/index.html` にページ本文を静的に埋め込みます（軽量プリレンダリング）。JavaScript が無効な環境やクローラーにも
+本文が見える状態でHTMLが配信され、JavaScript読み込み後は `hydrateRoot` でそのまま操作可能になります。
+
+ローカルで公開ファイルを確認する場合は `cd app && npm run build && npm run preview` を実行してください。
 
 ## ディレクトリ構成
 
 ```text
 app/
 ├─ src/
-│  ├─ app/          アプリケーションの起点
-│  ├─ components/   再利用可能な画面部品
-│  └─ pages/        ページコンポーネント
-├─ public/          ロゴ、OGP、検索エンジン向けの静的ファイル
+│  ├─ app/            アプリケーションの起点
+│  ├─ components/     再利用可能な画面部品
+│  ├─ pages/          ページコンポーネント
+│  ├─ main.tsx        クライアントエントリ（hydrateRoot）
+│  └─ entry-server.tsx サーバーサイドレンダリング用エントリ
+├─ scripts/
+│  └─ prerender.mjs   ビルド後にSSR結果をdist/index.htmlへ注入
+├─ public/            ロゴ、OGP、検索エンジン向けの静的ファイル
 ├─ package.json
 └─ vite.config.ts
-assets/             Vite が生成する公開用 JS / CSS バンドル
-index.html          GitHub Pages 用エントリポイント
 ```
 
 ## サービスについて

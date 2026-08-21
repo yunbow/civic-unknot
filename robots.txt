@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://yunbow.github.io/civic-unknot/sitemap.xml
