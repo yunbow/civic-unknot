@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-const links = [['#unknot', '解きたい課題'], ['#open-data', 'オープンデータ'], ['#product', 'trait-compass'], ['#eight-questions', '8つの問い'], ['#demo', 'デモ']]
+const links = [['#unknot', '解きたい課題'], ['#open-data', 'オープンデータ'], ['#product', 'trait-compass'], ['#outcomes', '成果'], ['#demo', 'デモ']]
 
 export function SiteHeader() {
   const [activeId, setActiveId] = useState('')
