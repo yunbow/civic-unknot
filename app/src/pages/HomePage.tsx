@@ -5,7 +5,7 @@ import { SiteHeader } from '../components/SiteHeader'
 const demoUrl = 'https://trait-compass.trait-compass.workers.dev'
 const surveyUrl = `${demoUrl}/survey`
 const supportUrl = `${demoUrl}/support`
-const dataSourcesUrl = `${demoUrl}/data-sources`
+const coverageUrl = `${demoUrl}/coverage`
 const outcomesUrl = `${demoUrl}/outcomes`
 
 const barriers = [
@@ -71,7 +71,7 @@ export function HomePage() {
 
     <section id="unknot" className="section"><div className="container narrow"><p className="section-kicker">THE PROBLEM WE UNKNOT</p><h2>相談先につながれない理由を、<br />ひとつずつほどく。</h2><p className="lead">困りごとがあっても、相談までにはいくつもの壁があります。trait-compassは、そのすべてを急がせず、本人が選べる導線として設計しています。</p><div className="barrier-grid">{barriers.map(([number, title, text]) => <article className="barrier" key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
 
-    <section id="open-data" className="section section-tint"><div className="container"><p className="section-kicker">OPEN DATA</p><h2>オープンデータが、<br />相談先への地図になる</h2><p className="lead">trait-compassは、東京都と区市町村が公開するオープンデータを整備し、「どこに相談できるか」を探せるかたちにつなぎ直しています。現在、62区市町村のうち54自治体・19データセット・4,822件のデータを掲載しています（2026年8月時点）。</p><div className="card-grid open-data-grid">{openData.map(([title, text]) => <ContentCard key={title} tone="good"><span className="card-label">OPEN DATA</span><h3>{title}</h3><p>{text}</p></ContentCard>)}</div><a className="text-link" href={dataSourcesUrl} target="_blank" rel="noreferrer">対応自治体とデータの内訳を見る（trait-compass データ出典ページ） <span aria-hidden="true">→</span></a></div></section>
+    <section id="open-data" className="section section-tint"><div className="container"><p className="section-kicker">OPEN DATA</p><h2>オープンデータが、<br />相談先への地図になる</h2><p className="lead">trait-compassは、東京都と区市町村が公開するオープンデータを整備し、「どこに相談できるか」を探せるかたちにつなぎ直しています。現在、62区市町村のうち54自治体・19データセット・4,822件のデータを掲載しています（2026年8月時点）。</p><div className="card-grid open-data-grid">{openData.map(([title, text]) => <ContentCard key={title} tone="good"><span className="card-label">OPEN DATA</span><h3>{title}</h3><p>{text}</p></ContentCard>)}</div><a className="text-link" href={coverageUrl} target="_blank" rel="noreferrer">対応自治体とデータの内訳を見る（trait-compass データカバレッジページ） <span aria-hidden="true">→</span></a></div></section>
 
     <section id="product" className="section"><div className="container"><div className="section-heading"><div className="product-lockup"><img src="./trait-compass-icon.svg" alt="trait-compass のコンパスアイコン" /><div><p className="section-kicker">PRODUCT / TRAIT-COMPASS</p><h2>「整理する」と「探す」を、<br />ひとつの流れに。</h2></div></div><p className="lead"><strong>trait-compass</strong> は、発達特性と日常の困りごとを整理し、公的な支援情報へつなぐブラウザ完結型のセルフチェックアプリです。医療行為ではありません。</p></div>
       <div className="entry-options" aria-label="trait-compassの始め方"><a className="entry-option" href={surveyUrl} target="_blank" rel="noreferrer"><span className="entry-icon" aria-hidden="true">◎</span><span><strong>セルフチェックから</strong><small>約5分・30問で傾向を整理する</small></span><b aria-hidden="true">→</b></a><a className="entry-option" href={supportUrl} target="_blank" rel="noreferrer"><span className="entry-icon" aria-hidden="true">⌕</span><span><strong>相談先を探すことから</strong><small>年齢と地域から公的な窓口を探す</small></span><b aria-hidden="true">→</b></a></div>
