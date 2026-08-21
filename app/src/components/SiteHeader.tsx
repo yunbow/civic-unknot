@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const links = [['#unknot', 'Unknotとは'], ['#product', 'trait-compass'], ['#eight-questions', '8つの問い'], ['#demo', 'デモ']]
+const links = [['#unknot', '解きたい課題'], ['#open-data', 'オープンデータ'], ['#product', 'trait-compass'], ['#eight-questions', '8つの問い'], ['#demo', 'デモ']]
 
 export function SiteHeader() {
   const [activeId, setActiveId] = useState('')
@@ -17,6 +17,6 @@ export function SiteHeader() {
 
   return <header className="site-header"><nav className="nav container" aria-label="主要ナビゲーション">
     <a className="nav-brand" href="#top" aria-label="CivicUnknot トップへ"><img src="./logo-transparent-outline.png" alt="" /><span>Civic<span>Unknot</span></span></a>
-    <div className="nav-links">{links.map(([href, label]) => <a className={activeId === href ? 'is-active' : undefined} key={href} href={href}>{label}</a>)}</div>
+    <div className="nav-links">{links.map(([href, label]) => { const isActive = activeId === href; return <a className={isActive ? 'is-active' : undefined} aria-current={isActive ? 'location' : undefined} key={href} href={href}>{label}</a> })}</div>
   </nav></header>
 }
