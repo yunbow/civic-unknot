@@ -3,7 +3,7 @@
 [![Lint & Link Check](https://github.com/yunbow/civic-unknot/actions/workflows/lint.yml/badge.svg)](https://github.com/yunbow/civic-unknot/actions/workflows/lint.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-**デモ:** https://yunbow.github.io/civic-unknot/
+**チーム紹介サイト:** https://yunbow.github.io/civic-unknot/ ｜ **Trait Compassを試す:** https://trait-compass.trait-compass.workers.dev/ ｜ **Trait Compass GitHub:** https://github.com/yunbow/trait-compass
 
 CivicUnknot は、「東京都知事杯オープンデータ・ハッカソン2026」への参加をきっかけに活動する Civic Tech プロジェクトです。複雑に絡まって見える制度や支援の情報を、東京都のオープンデータの力でほどき、一人ひとりの気づきを信頼できる公的な相談窓口へつなぐことを目指しています。
 
@@ -20,7 +20,7 @@ CivicUnknot は、「東京都知事杯オープンデータ・ハッカソン20
 ## 関連プロジェクト — trait-compass
 
 - trait-compass は、発達特性のセルフチェック結果を、東京都・区市町村のオープンデータによる公的相談窓口の案内へつなぐ支援ナビで、東京都知事杯オープンデータ・ハッカソン2026への応募作品です。
-- セルフチェック結果はブラウザ内で完結し、外部には保存されません。医療行為ではなく、公的な相談窓口への相談を後押しするためのツールです。
+- セルフチェックの回答・スコアリング・結果表示はブラウザ内で完結します（支援情報検索やAI機能など、明示的な機能ではサーバーを使用します）。医療行為ではなく、公的な相談窓口への相談を後押しするためのツールです。
 - データ処理・プライバシー・AI 機能の利用条件・アーキテクチャなどの詳細は、一次情報である [yunbow/trait-compass](https://github.com/yunbow/trait-compass) リポジトリを参照してください。
 - 行政との接続、多言語対応やデジタルに不慣れな方への配慮、実運用における成果測定は、今後も公開しながら取り組む課題です。
 
@@ -71,5 +71,17 @@ app/
 ## 免責事項
 
 本サイトで紹介する trait-compass は医療行為ではありません。セルフチェックの結果は医学的な判定を示すものではなく、公的な相談窓口への相談を後押しするためのものです。
+
+## コントリビューション
+
+貢献方法は [CONTRIBUTING.md](./CONTRIBUTING.md) を参照してください。
+
+## セキュリティ
+
+脆弱性の報告方法は [SECURITY.md](./SECURITY.md) を参照してください。
+
+## ライセンス
+
+[MIT License](./LICENSE)
 
 ---
