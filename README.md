@@ -3,7 +3,7 @@
 [![Lint & Link Check](https://github.com/yunbow/civic-unknot/actions/workflows/lint.yml/badge.svg)](https://github.com/yunbow/civic-unknot/actions/workflows/lint.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-**チーム紹介サイト:** https://yunbow.github.io/civic-unknot/ ｜ **Trait Compassを試す:** https://trait-compass.trait-compass.workers.dev/ ｜ **Trait Compass GitHub:** https://github.com/yunbow/trait-compass
+**チーム紹介サイト:** https://yunbow.github.io/civic-unknot/ ｜ **Trait Compassを試す:** https://trait-compass.jp/ ｜ **Trait Compass GitHub:** https://github.com/yunbow/trait-compass
 
 CivicUnknot は、「東京都知事杯オープンデータ・ハッカソン2026」への参加をきっかけに活動する Civic Tech プロジェクトです。複雑に絡まって見える制度や支援の情報を、東京都のオープンデータの力でほどき、一人ひとりの気づきを信頼できる公的な相談窓口へつなぐことを目指しています。
 

@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { ContentCard } from '../components/ContentCard'
 import { SiteHeader } from '../components/SiteHeader'
 
-const demoUrl = 'https://trait-compass.trait-compass.workers.dev'
+const demoUrl = 'https://trait-compass.jp'
 const surveyUrl = `${demoUrl}/survey`
 const supportUrl = `${demoUrl}/support`
 const coverageUrl = `${demoUrl}/coverage`
